@@ -1,0 +1,117 @@
+.checkout-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.checkout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.checkout-img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.checkout-item div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.checkout-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.checkout-item p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.checkout-total {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.checkout-total h3 {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.checkout-btn,
+.go-home-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+.go-home-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.go-home-btn:hover {
+  background-color: #1e7e34;
+}
+
+@media (max-width: 600px) {
+  .checkout-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkout-img {
+    width: 80px;
+  }
+
+  .checkout-total,
+  .checkout-btn,
+  .go-home-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .checkout-total {
+    align-items: center;
+  }
+}

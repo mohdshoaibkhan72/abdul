@@ -1,0 +1,51 @@
+.shop-container {
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.shop-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c2c2c;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Optional: Add media query to slightly adjust padding on smaller devices */
+@media (max-width: 768px) {
+  .shop-container {
+    padding: 30px 15px;
+  }
+
+  .shop-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .product-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-container {
+    padding: 20px 10px;
+  }
+
+  .shop-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-grid {
+    gap: 16px;
+  }
+}
